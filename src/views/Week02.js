@@ -21,7 +21,7 @@ class Week01 extends React.Component {
           <a href="https://github.com/Fredde0223/jsramverk">Min app på Github</a>
         </p>
         <p>
-          <a href="https://github.com/Fredde0223/jsramverk">Mitt API på Github</a>
+          <a href="https://github.com/Fredde0223/jsramv_api">Mitt API på Github</a>
         </p>
         &nbsp;
         <textarea className="outputArea" readonly value={this.state.content}></textarea>
