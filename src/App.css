@@ -41,7 +41,7 @@ ul {
 
 li {
     display: inline;
-    margin-right: 2em;
+    margin-right: 1.7em;
 }
 
 a {
@@ -64,4 +64,16 @@ tr {
 
 .question {
   margin-bottom: 2em;
+}
+
+.inputArea {
+    height: 20rem;
+    width: 50rem;
+    resize: none;
+}
+
+.outputArea {
+    height: 20rem;
+    width: 50rem;
+    resize: none;
 }
