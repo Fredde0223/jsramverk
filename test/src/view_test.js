@@ -17,7 +17,7 @@ test.describe("min app", function() {
         browser = new webdriver.Builder().
             withCapabilities(webdriver.Capabilities.firefox()).build();
 
-        browser.get("min-app.frah19.me/");
+        browser.get("http://localhost:3000/");
         done();
     });
 
@@ -35,7 +35,7 @@ test.describe("min app", function() {
 
     function matchUrl(target) {
         browser.getCurrentUrl().then(function(url) {
-            assert.ok(url.endsWith("me" + target));
+            assert.ok(url.endsWith("3000" + target));
         });
     }
 
