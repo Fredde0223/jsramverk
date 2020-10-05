@@ -18,12 +18,12 @@ test.describe("min app", function() {
             withCapabilities(webdriver.Capabilities.firefox()).build();
 
         browser.get("http://localhost:3000/#!/");
-        done();
+        .end(done);
     });
 
     test.afterEach(function(done) {
         browser.quit();
-        done();
+        .end(done);
     });
 
 
