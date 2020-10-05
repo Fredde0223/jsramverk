@@ -7,11 +7,10 @@ class Me extends React.Component {
   }
 
   async componentDidMount() {
-    const url = 'http://localhost:1337/';
+    const url = 'https://mitt-api.frah19.me/';
     const response = await fetch(url);
     const result = await response.json();
     this.setState({ title: result.data.title, about: result.data.about });
-    localStorage.clear();
   }
 
   render() {

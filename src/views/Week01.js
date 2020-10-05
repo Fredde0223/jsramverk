@@ -7,7 +7,7 @@ class Week01 extends React.Component {
   };
 
   async componentDidMount() {
-    const url = "http://localhost:1337/reports/week/1";
+    const url = "https://mitt-api.frah19.me/reports/week/1";
     const response = await fetch(url);
     const result = await response.json();
     this.setState({ title: result.data.title, content: result.data.content });

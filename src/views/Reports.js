@@ -13,7 +13,7 @@ class Reports extends React.Component {
   }
 
   handleSubmit = (event) => {
-    fetch('http://localhost:1337/reports/', {
+    fetch('https://mitt-api.frah19.me/reports/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json; charset=utf-8',

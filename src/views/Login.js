@@ -13,7 +13,7 @@ class Login extends React.Component {
   handleSubmit = (event) => {
     const that = this;
 
-    fetch('http://localhost:1337/login/', {
+    fetch('https://mitt-api.frah19.me/login/', {
         method: 'POST',
         headers: {'Content-Type': 'application/json; charset=utf-8'},
         body: JSON.stringify(this.state)

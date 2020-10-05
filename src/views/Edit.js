@@ -26,7 +26,7 @@ class Edit extends React.Component {
   }
 
   handleSubmit = (event) => {
-    fetch('http://localhost:1337/reports/edit/', {
+    fetch('https://mitt-api.frah19.me/reports/edit/', {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json; charset=utf-8',
@@ -41,7 +41,7 @@ class Edit extends React.Component {
   }
 
   async componentDidMount() {
-    const url = 'http://localhost:1337/reports/edit/';
+    const url = 'https://mitt-api.frah19.me/reports/edit/';
     const response = await fetch(url);
     const result = await response.json();
     this.setState({ array: result.data });

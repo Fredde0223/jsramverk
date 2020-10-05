@@ -11,7 +11,7 @@ class Register extends React.Component {
   }
 
   handleSubmit = (event) => {
-    fetch('http://localhost:1337/register/', {
+    fetch('https://mitt-api.frah19.me/register/', {
         method: 'POST',
         headers: {'Content-Type': 'application/json; charset=utf-8'},
         body: JSON.stringify(this.state)
