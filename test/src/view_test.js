@@ -17,13 +17,13 @@ test.describe("min app", function() {
         browser = new webdriver.Builder().
             withCapabilities(webdriver.Capabilities.firefox()).build();
 
-        browser.get("http://localhost:3000/#!/");
-        .end(done);
+        browser.get("http://localhost:3000/");
+        done();
     });
 
     test.afterEach(function(done) {
         browser.quit();
-        .end(done);
+        done();
     });
 
 
