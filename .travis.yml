@@ -1,8 +1,5 @@
 language: node_js
 
-addons:
-    firefox: "60.0"
-
 node_js:
     - "node"
     - "10"
