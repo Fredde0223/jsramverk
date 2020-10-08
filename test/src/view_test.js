@@ -4,6 +4,7 @@
 
 const assert = require("assert");
 const test = require("selenium-webdriver/testing");
+const firefox = require('selenium-webdriver/firefox')
 const webdriver = require("selenium-webdriver");
 const By = webdriver.By;
 
@@ -13,11 +14,14 @@ let browser;
 
 test.describe("min app", function() {
     test.beforeEach(function(done) {
-        this.timeout(20000);
-        browser = new webdriver.Builder().
-            withCapabilities(webdriver.Capabilities.firefox()).build();
+        this.timeout(200000);
+        browser = new webdriver.Builder()
+            .withCapabilities(webdriver.Capabilities.firefox())
+            .setFirefoxOptions(new firefox.Options().headless())
+            .forBrowser('firefox')
+            .build();
 
-        browser.get("http://localhost:3000/");
+        browser.get("http://localhost:8082/");
         done();
     });
 
@@ -35,7 +39,7 @@ test.describe("min app", function() {
 
     function matchUrl(target) {
         browser.getCurrentUrl().then(function(url) {
-            assert.ok(url.endsWith("3000" + target));
+            assert.ok(url.endsWith("8082" + target));
         });
     }
 
