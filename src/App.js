@@ -9,6 +9,7 @@ import Week01 from './views/Week01';
 import Week02 from './views/Week02';
 import Week03 from './views/Week03';
 import Week04 from './views/Week04';
+import Chat from './views/Chat';
 import './App.css';
 
 class App extends React.Component {
@@ -45,6 +46,9 @@ class App extends React.Component {
               <li>
                 <Link to="/reports/week/4">Week 4</Link>
               </li>
+              <li>
+                <Link to="/chat">Chat</Link>
+              </li>
             </ul>
           </nav>
           <Route exact path="/" component={Me} />
@@ -56,6 +60,7 @@ class App extends React.Component {
           <Route exact path="/reports/week/2" component={Week02} />
           <Route exact path="/reports/week/3" component={Week03} />
           <Route exact path="/reports/week/4" component={Week04} />
+          <Route exact path="/chat" component={Chat} />
         </div>
       </Router>
     )
