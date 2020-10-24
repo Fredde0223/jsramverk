@@ -6,7 +6,7 @@ class History extends React.Component {
   }
 
   async componentDidMount() {
-    const url = 'http://localhost:3000';
+    const url = 'https://chat.frah19.me';
     const response = await fetch(url);
     const result = await response.json();
 

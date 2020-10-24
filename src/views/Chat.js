@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import io from "socket.io-client";
-const ENDPOINT = "localhost:3000";
+const ENDPOINT = "https://chat.frah19.me";
 const chatSocket = io(ENDPOINT);
 
 function Chat() {
